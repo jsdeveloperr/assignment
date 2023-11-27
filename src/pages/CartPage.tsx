@@ -49,12 +49,19 @@ const CartPage = () => {
     }
   };
 
-  const addCardQuantity = (productItem: any) => {
+  const productQuantity = (productItem: any) => {
     const existingProduct = productData.findIndex(
       (item: any) => item.name === productItem.name
     );
 
     return productData[existingProduct]?.quantity;
+  };
+
+  const addCardQuantity = (productItem: any) => productQuantity(productItem);
+
+  const addToCardIncrease = (productItem: any) => {
+    const quantity = productQuantity(productItem);
+    addToCard({ product: productItem, quantity });
   };
 
   React.useEffect(() => {
@@ -102,7 +109,7 @@ const CartPage = () => {
                         item={item}
                         onRemoveClick={() => removeFromCart(item)}
                         productQuantity={() => addCardQuantity(item)}
-                        onAddClick={() => addToCard(item)}
+                        onAddClick={() => addToCardIncrease(item)}
                         onDecreaseClick={() => decreaseFromCart(item)}
                       />
                     ))}
