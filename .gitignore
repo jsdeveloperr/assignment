@@ -1,0 +1,14 @@
+dist/
+.idea
+.DS_Store
+node_modules**
+yarn-error.log
+npm-debug.log
+.nyc_output
+.tmp
+assets.json
+id_rsa
+coverage
+
+# vercel
+.vercel

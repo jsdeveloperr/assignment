@@ -1,0 +1,37 @@
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0 !important;
+}
+
+#app {
+  background-color: #f6f9fc;
+  height: 100vh;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f6f9fc;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #f6f9fc;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, #cfcfcf)
+  );
+}
+
+.errorDropzone {
+  border-color: #d32f2f !important;
+}

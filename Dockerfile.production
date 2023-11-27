@@ -1,0 +1,24 @@
+FROM node:18.11.0-slim
+
+RUN npm install -g pnpm
+
+WORKDIR /app
+
+# Setup a path for using local npm packages
+RUN mkdir -p /opt/node_modules
+
+COPY ./package.json /app
+COPY ./pnpm-lock.yaml /app
+
+RUN pnpm install --frozen-lockfile
+
+COPY ./ /app
+
+COPY .env.production .env.production
+RUN pnpm build:prod
+
+# EXPOSE 3001
+
+ENV PORT 3001
+
+CMD ["pnpm", "start"]

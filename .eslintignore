@@ -1,0 +1,14 @@
+**/node_modules/*
+**/.vscode/*
+**/.husky/*
+**/dist/*
+**/pages/__tests__/*
+
+## extensions
+*.*
+Dockerfile
+!*.js
+!*.ts
+!*.tsx
+
+

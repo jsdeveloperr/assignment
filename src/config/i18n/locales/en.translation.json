@@ -1,0 +1,41 @@
+{
+  "home": {
+    "title": "Posts",
+    "form": {
+      "title": "title",
+      "body": "body",
+      "validation": {
+        "title-required": "title can't be empty",
+        "title-max": "title must not exceed {{num}} characters",
+        "body-required": "body can't be empty"
+      }
+    },
+    "buttons": {
+      "submit": "login",
+      "reset": "Reset",
+      "delete": "Delete",
+      "update": "Update"
+    }
+  },
+  "navigation": {
+    "links": {
+      "home": "Home",
+      "about": "About"
+    }
+  },
+  "signin": {
+    "form": {
+      "username": "Username",
+      "password": "Password",
+      "validation": {
+        "username-required": "username can't be empty",
+        "username-max": "username must not exceed {{num}} characters",
+        "password-required": "password can't be empty",
+        "password-max": "password must not exceed {{num}} characters"
+      }
+    },
+    "button": {
+      "submit": "Login"
+    }
+  }
+}
