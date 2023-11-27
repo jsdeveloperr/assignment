@@ -1,4 +1,4 @@
-# 📦 React Vite U-xer
+# 📦 React Vite Assignment
 
 <div align="center">
 
@@ -18,10 +18,6 @@ with [Typescript](https://www.typescriptlang.org/), [Redux Toolkit](https://redu
 , [React-i18next](https://react.i18next.com/) and [Material UI](https://mui.com/).
 
 </div>
-
-## 🗂 User Authentication and Data Management
-
-1. dummyJSON -> https://dummyjson.com/docs/products
 
 ## 🗂 Table of Content
 
